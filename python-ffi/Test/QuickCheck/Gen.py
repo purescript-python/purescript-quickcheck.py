@@ -1,2 +1,4 @@
+import struct
+
 def float32ToInt32(n):
-    raise NotImplementedError()
+    return struct.unpack("i", struct.pack("f", n))
